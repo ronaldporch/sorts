@@ -1,8 +1,5 @@
-require "minitest/autorun"
-require "minitest/spec"
+require "spec_helper"
 require "insertion"
-require "minitest/benchmark"
-require "minitest/pride"
 
 describe Array do
   it "should show keys" do
