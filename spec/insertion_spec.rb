@@ -2,7 +2,14 @@ require "spec_helper"
 require "insertion"
 
 describe Array do
-  it "should show keys" do
-    [3, 2, 6, 4, 1].insertion_sort!.must_equal [1,2,3,4,6]
+    before do
+    @a = (1..10000).to_a
+  end
+  it "should sort random values" do
+    @a.shuffle.insertion_sort!.must_equal @a
+  end
+
+  it "should quickly sort already sorted values" do
+    @a.insertion_sort!.must_equal @a
   end
 end

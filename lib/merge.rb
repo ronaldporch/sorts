@@ -1,5 +1,4 @@
 class MergeSort
-
   def merge(left, right)
     if left.empty?
       right
