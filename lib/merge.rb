@@ -31,6 +31,7 @@ class MergeSort
   end
 end
 
-a = [44, 4, 1, 3, 2, 5, 9]
+a = (1..3000).to_a.shuffle
 m = MergeSort.new
 m.merge_sort(a)
+
